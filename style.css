@@ -17,7 +17,6 @@ body {
 }
 
 .glow-button {
-    align-items: center;
     position: relative;
     z-index: 1;
     overflow: hidden;
