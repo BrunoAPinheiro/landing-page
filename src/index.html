@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme Seu Corpo - E-book Revolucionário de Emagrecimento</title>
+    <meta name="description" content="Descubra o método comprovado para emagrecer até 30kg em 90 dias. Transforme seu corpo com nosso e-book revolucionário, planos personalizados e suporte exclusivo.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Seu Nome ou Marca">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com/">
+    <meta property="og:title" content="Transforme Seu Corpo - E-book Revolucionário de Emagrecimento">
+    <meta property="og:description" content="Descubra o método comprovado para emagrecer até 30kg em 90 dias. Transforme seu corpo com nosso e-book revolucionário, planos personalizados e suporte exclusivo.">
+    <meta property="og:image" content="https://seudominio.com/imagem-destaque.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://seudominio.com/">
+    <meta name="twitter:title" content="Transforme Seu Corpo - E-book Revolucionário de Emagrecimento">
+    <meta name="twitter:description" content="Descubra o método comprovado para emagrecer até 30kg em 90 dias. Transforme seu corpo com nosso e-book revolucionário, planos personalizados e suporte exclusivo.">
+    <meta name="twitter:image" content="https://seudominio.com/imagem-destaque.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://seudominio.com/">
+
+    <!-- Tailwind, Swiper e fontes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen">
+
+    <!-- Header com contador regressivo -->
+    <header class="w-full bg-gradient-to-r from-purple-900 to-black py-2 px-2 sm:px-4 md:px-8 lg:px-16 shadow-lg fixed top-0 z-50">
+        <div class="w-full max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto px-2 sm:px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <h1 class="text-2xl md:text-3xl font-bold">
+                    <span class="gradient-text">Corpo</span>
+                    <span class="text-white">Ideal</span>
+                </h1>
+            </div>
+            <div class="flex flex-col items-center">
+                <p class="text-sm md:text-base font-medium mb-2 text-yellow-300 uppercase tracking-wider">Oferta especial termina em:</p>
+                <div class="flex space-x-2 md:space-x-4">
+                    <div class="countdown-item flex flex-col items-center justify-center w-10 md:w-12 h-10 md:h-12 rounded-lg">
+                        <span id="days" class="text-base md:text-lg font-bold">00</span>
+                        <span class="text-[10px] md:text-xs text-gray-300">Dias</span>
+                    </div>
+                    <div class="countdown-item flex flex-col items-center justify-center w-10 md:w-12 h-10 md:h-12 rounded-lg">
+                        <span id="hours" class="text-base md:text-lg font-bold">00</span>
+                        <span class="text-[10px] md:text-xs text-gray-300">Horas</span>
+                    </div>
+                    <div class="countdown-item flex flex-col items-center justify-center w-10 md:w-12 h-10 md:h-12 rounded-lg">
+                        <span id="minutes" class="text-base md:text-lg font-bold">00</span>
+                        <span class="text-[10px] md:text-xs text-gray-300">Min</span>
+                    </div>
+                    <div class="countdown-item flex flex-col items-center justify-center w-10 md:w-12 h-10 md:h-12 rounded-lg">
+                        <span id="seconds" class="text-base md:text-lg font-bold">00</span>
+                        <span class="text-[10px] md:text-xs text-gray-300">Seg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 md:pt-40 pb-12 md:pb-20 px-2 sm:px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
+                Descubra o <span class="gradient-text">Segredo</span> Para Emagrecer <span class="gradient-text">30kg</span> em Apenas 90 Dias
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                Sem dietas malucas, sem passar fome, sem horas intermináveis de academia.
+                <span class="font-bold text-yellow-300">Um método comprovado por mais de 1.500 pessoas.</span>
+            </p>
+            
+            <!-- Indicador de escassez -->
+            <div class="bg-gray-900 p-4 rounded-lg mb-8 border border-purple-500 shadow-lg">
+                <div class="flex items-center justify-between mb-2">
+                    <p class="font-bold text-yellow-300">Restam apenas <span class="text-xl">7</span> vagas!</p>
+                    <div class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
+                        LIMITADO
+                    </div>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                    <div class="scarcity-bar w-[15%]"></div>
+                </div>
+            </div>
+            
+            <a href="#formulario" class="glow-button bg-gradient-to-r from-orange-500 to-pink-600 text-white font-bold py-4 px-8 rounded-xl text-lg md:text-xl inline-block">
+                QUERO EMAGRECER AGORA!
+            </a>
+        </div>
+    </section>
+
+    <!-- Carrossel de produtos -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-black bg-opacity-50">
+        <div class="container mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+            <h2 class="text-2xl md:text-3xl font-bold mb-10 text-center">
+                <span class="gradient-text">Pacotes Exclusivos</span> Para Sua Transformação
+            </h2>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- E-book principal -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl h-full flex flex-col justify-between border border-purple-500">
+                            <div>
+                                <div class="bg-yellow-500 text-black font-bold py-1 px-4 rounded-full inline-block mb-4">MAIS POPULAR</div>
+                                <h3 class="text-xl font-bold mb-4">E-book Transforme Seu Corpo</h3>
+                                <ul class="mb-6 space-y-2">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Plano alimentar de 90 dias
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        30 receitas low-carb
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Guia de exercícios em casa
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="text-gray-400 line-through">R$97</div>
+                                    <div class="text-2xl font-bold text-white">R$47</div>
+                                </div>
+                                <a href="#formulario" class="block text-center bg-gradient-to-r from-orange-500 to-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-all">
+                                    QUERO ESTE PACOTE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Plano personalizado -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl h-full flex flex-col justify-between border border-purple-500">
+                            <div>
+                                <div class="bg-purple-500 text-white font-bold py-1 px-4 rounded-full inline-block mb-4">PREMIUM</div>
+                                <h3 class="text-xl font-bold mb-4">Plano Personalizado</h3>
+                                <ul class="mb-6 space-y-2">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        E-book Transforme Seu Corpo
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Plano alimentar personalizado
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Acesso ao grupo VIP por 30 dias
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="text-gray-400 line-through">R$297</div>
+                                    <div class="text-2xl font-bold text-white">R$147</div>
+                                </div>
+                                <a href="#formulario" class="block text-center bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-all">
+                                    QUERO ESTE PACOTE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mentoria VIP -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl h-full flex flex-col justify-between border border-purple-500">
+                            <div>
+                                <div class="bg-yellow-900 text-white font-bold py-1 px-4 rounded-full inline-block mb-4">VIP</div>
+                                <h3 class="text-xl font-bold mb-4">Mentoria Completa</h3>
+                                <ul class="mb-6 space-y-2">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Todos os itens anteriores
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        3 sessões de mentoria individual
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Acesso vitalício ao grupo VIP
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Suporte prioritário por 90 dias
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="text-gray-400 line-through">R$997</div>
+                                    <div class="text-2xl font-bold text-white">R$497</div>
+                                </div>
+                                <a href="#formulario" class="block text-center bg-gradient-to-r from-yellow-600 to-yellow-800 text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition-all">
+                                    QUERO ESTE PACOTE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de benefícios -->
+    <section class="py-16 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">
+                Transforme Sua Vida <span class="gradient-text">Em Apenas 90 Dias</span>
+            </h2>
+            <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+                Nosso método exclusivo já ajudou mais de 1.500 pessoas a conquistarem o corpo dos sonhos. 
+                Veja o que você vai conseguir:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefício 1 -->
+                <div class="benefit-card bg-black bg-opacity-50 p-6 rounded-xl border border-purple-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Resultados Rápidos</h3>
+                    <p class="text-gray-300">
+                        Comece a ver mudanças visíveis em apenas 7 dias seguindo nosso protocolo exclusivo.
+                    </p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="benefit-card bg-black bg-opacity-50 p-6 rounded-xl border border-purple-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Plano Completo</h3>
+                    <p class="text-gray-300">
+                        Receba um plano alimentar detalhado e exercícios simples que cabem na sua rotina.
+                    </p>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="benefit-card bg-black bg-opacity-50 p-6 rounded-xl border border-purple-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Personalização</h3>
+                    <p class="text-gray-300">
+                        Aprenda a adaptar o método ao seu corpo e metabolismo para maximizar resultados.
+                    </p>
+                </div>
+                
+                <!-- Benefício 4 -->
+                <div class="benefit-card bg-black bg-opacity-50 p-6 rounded-xl border border-purple-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Energia Renovada</h3>
+                    <p class="text-gray-300">
+                        Elimine a fadiga e ganhe disposição para viver intensamente todos os dias.
+                    </p>
+                </div>
+                
+                <!-- Benefício 5 -->
+                <div class="benefit-card bg-black bg-opacity-50 p-6 rounded-xl border border-purple-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Saúde Melhorada</h3>
+                    <p class="text-gray-300">
+                        Reduza inflamações, melhore o sono e equilibre seus hormônios naturalmente.
+                    </p>
+                </div>
+                
+                <!-- Benefício 6 -->
+                <div class="benefit-card bg-black bg-opacity-50 p-6 rounded-xl border border-purple-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.025 12.025 0 011 12a12.025 12.025 0 012.382 7.056A11.955 11.955 0 0112 21.056a11.955 11.955 0 018.618-3.04A12.025 12.025 0 0123 12a12.025 12.025 0 01-2.382-7.056z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Acompanhamento Contínuo</h3>
+                    <p class="text-gray-300">
+                        Tenha suporte e orientação contínuos para garantir sua transformação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-black bg-opacity-50">
+        <div class="container mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">
+                Resultados Reais de Nossos Alunos
+            </h2>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Depoimento 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl h-full flex flex-col justify-between border border-purple-500">
+                            <div>
+                                <p class="text-gray-300 mb-4">
+                                    "Eu estava cético no começo, mas decidi tentar o método. Em apenas 30 dias, já havia perdido 10kg e minha energia estava lá em cima! Recomendo a todos."
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto do Depoente" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-bold">João Silva</p>
+                                        <p class="text-gray-400 text-sm">São Paulo, SP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl h-full flex flex-col justify-between border border-purple-500">
+                            <div>
+                                <p class="text-gray-300 mb-4">
+                                    "O plano alimentar é incrível e as receitas são deliciosas! Nunca pensei que emagrecer poderia ser tão fácil e saboroso."
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Foto do Depoente" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-bold">Maria Oliveira</p>
+                                        <p class="text-gray-400 text-sm">Rio de Janeiro, RJ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl h-full flex flex-col justify-between border border-purple-500">
+                            <div>
+                                <p class="text-gray-300 mb-4">
+                                    "A mentoria foi o diferencial para eu conseguir emagrecer de vez. O suporte do Dr. Carlos é excepcional, sempre me motivando e orientando."
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Foto do Depoente" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-bold">Carlos Santos</p>
+                                        <p class="text-gray-400 text-sm">Belo Horizonte, MG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chamada para ação final -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-purple-900 to-black">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
+                Está Pronto Para Transformar Sua Vida?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                Não perca mais tempo, as vagas são limitadas e a oportunidade é única. Junte-se aos mais de 1.500 alunos satisfeitos e comece sua transformação agora mesmo!
+            </p>
+            
+            <a href="#formulario" class="glow-button bg-gradient-to-r from-orange-500 to-pink-600 text-white font-bold py-4 px-8 rounded-xl text-lg md:text-xl inline-block">
+                QUERO ME TRANSFORMAR
+            </a>
+        </div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section class="py-16 px-4 md:px-8 lg:px-16" id="formulario">
+        <div class="container mx-auto max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">
+                Entre em Contato e Comece Sua Jornada
+            </h2>
+            
+            <form action="#" method="POST" class="bg-black bg-opacity-50 p-8 rounded-xl shadow-lg space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="nome" class="text-sm font-medium text-gray-300">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required class="w-full p-3 mt-1 rounded-lg bg-gray-800 border border-purple-500 focus:ring-2 focus:ring-purple-600 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="email" class="text-sm font-medium text-gray-300">E-mail</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 mt-1 rounded-lg bg-gray-800 border border-purple-500 focus:ring-2 focus:ring-purple-600 focus:outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label for="mensagem" class="text-sm font-medium text-gray-300">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required class="w-full p-3 mt-1 rounded-lg bg-gray-800 border border-purple-500 focus:ring-2 focus:ring-purple-600 focus:outline-none"></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-gradient-to-r from-orange-500 to-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:opacity-90 transition-opacity">
+                        ENVIAR MENSAGEM
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 md:px-8 lg:px-16 bg-black bg-opacity-50">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400 text-sm">
+                © 2025 Transforme Seu Corpo. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
